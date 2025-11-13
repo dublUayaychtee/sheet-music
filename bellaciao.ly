@@ -1,7 +1,7 @@
-\version "2.22"
+\version "2.22.2"
 
 \header{
-  title = "O Bella ciao"
+  title = "O Bella Ciao"
   composer = "Volkslied aus Italien"
 }
 
@@ -40,7 +40,7 @@ LH = \fixed do {
   la,8 la^"m" mi, la <la, la >2 |
 }
 
-StropheEins =
+One =
 \lyricmode {
   U -- na mat -- ti -- na __ mi son sve -- glia -- to __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
@@ -48,12 +48,44 @@ StropheEins =
   Eo ho tro -- va -- to l'in -- va -- sor.
 }
 
-StropheZwei =
+Two =
 \lyricmode {
   O par -- ti -- gia -- no __ por -- ta -- mi vi -- a __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
-  O par -- ti -- gia -- no, __ por -- ta -- mi vi -- a __
-  \skip Che mi sen -- to di mo -- rir.
+  O par -- ti -- gia -- no __ por -- ta -- mi vi -- a __
+  \skip 8 Che mi sen -- to di mo -- rir.
+}
+
+Three =
+\lyricmode {
+  E se io muo -- io __ da par -- ti -- gia -- no __
+  O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
+  E se io muo -- io __ da par -- ti -- gia -- no __
+  \skip 8 Tu mi de -- vi sep -- pel -- lir
+}
+
+Four =
+\lyricmode {
+  Mi sep -- pel -- li -- re __  las -- sù~in mon -- ta -- gna __
+  O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
+  Mi sep -- pel -- li -- re __ las -- sù~in mon -- ta -- gna __
+  \skip 8 Sot -- to l'om -- bra di~un bel fior
+}
+
+Five =
+\lyricmode {
+  \skip 8 E le gen -- ti __ che pas -- se -- ran -- no __
+  O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
+  \skip 8 E le gen -- ti __ che pas -- se -- ran -- no __
+  \skip 8 Mi di -- ran -- no: Che bel fior
+}
+
+Six =
+\lyricmode {
+  È que -- sto~il fio -- re __ del par -- ti -- gia -- no __
+  O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
+  È que -- sto~il fio -- re __  del par -- ti -- gia -- no __
+  \skip 8 Mor -- to per la li -- ber -- tà
 }
 
 \score
@@ -64,8 +96,12 @@ StropheZwei =
     \new Staff
     <<
       \new Voice = "upper" { \RH }
-      \new Lyrics \lyricsto "upper" { \StropheEins }
-      \new Lyrics \lyricsto "upper" { \StropheZwei }
+      \new Lyrics \lyricsto "upper" { \One }
+      \new Lyrics \lyricsto "upper" { \Two }
+      \new Lyrics \lyricsto "upper" { \Three }
+      \new Lyrics \lyricsto "upper" { \Four }
+      \new Lyrics \lyricsto "upper" { \Five }
+      \new Lyrics \lyricsto "upper" { \Six }
     >>
     <<
       \new Staff = "Bass" \LH
