@@ -2,6 +2,7 @@
 
 \header{
   title = "O Bella Ciao"
+  tagline = ##f
   composer = "Volkslied aus Italien"
 }
 
@@ -21,7 +22,7 @@ RH = \relative do' {
   fa fa4.~ 8 fa mi re |
   fa mi4.~ 8 mi re do |
   si4 mi si do |
-  la1 |
+  la2~ 8 | \bar ":|."
 }
 
 LH = \fixed do {
@@ -37,11 +38,12 @@ LH = \fixed do {
   re re'^"m" la, re' re re' la, re' |
   la,8 la^"m" mi, la la, la mi, la
   mi, mi^"7" si, mi mi, mi si, mi |
-  la,8 la^"m" mi, la <la, la >2 |
+  \partial 8*5 la,8 la^"m" mi, la <la, la > |
 }
 
 One =
 \lyricmode {
+  \set stanza = #"1."
   U -- na mat -- ti -- na __ mi son sve -- glia -- to __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
   U -- na mat -- ti -- na __ mi son sve -- glia -- to __
@@ -50,6 +52,7 @@ One =
 
 Two =
 \lyricmode {
+  \set stanza = #"2."
   O par -- ti -- gia -- no __ por -- ta -- mi vi -- a __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
   O par -- ti -- gia -- no __ por -- ta -- mi vi -- a __
@@ -58,6 +61,7 @@ Two =
 
 Three =
 \lyricmode {
+  \set stanza = #"3."
   E se io muo -- io __ da par -- ti -- gia -- no __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
   E se io muo -- io __ da par -- ti -- gia -- no __
@@ -66,22 +70,25 @@ Three =
 
 Four =
 \lyricmode {
+  \set stanza = #"4."
   Mi sep -- pel -- li -- re __  las -- sù~in mon -- ta -- gna __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
   Mi sep -- pel -- li -- re __ las -- sù~in mon -- ta -- gna __
-  \skip 8 Sot -- to l'om -- bra di~un bel fior
+  Sot -- to l'om -- bra di un bel fior
 }
 
 Five =
 \lyricmode {
-  \skip 8 E le gen -- ti __ che pas -- se -- ran -- no __
+  \set stanza = #"5."
+  E __ _ le gen -- ti __ che pas -- se -- ran -- no __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
-  \skip 8 E le gen -- ti __ che pas -- se -- ran -- no __
+  E __ _ le gen -- ti __ che pas -- se -- ran -- no __
   \skip 8 Mi di -- ran -- no: Che bel fior
 }
 
 Six =
 \lyricmode {
+  \set stanza = #"6."
   È que -- sto~il fio -- re __ del par -- ti -- gia -- no __
   O bel -- la ciao, bel -- la ciao, bel -- la ciao ciao ciao
   È que -- sto~il fio -- re __  del par -- ti -- gia -- no __
