@@ -38,7 +38,7 @@ LH = \fixed do {
   re re'^"m" la, re' re re' la, re' |
   la,8 la^"m" mi, la la, la mi, la
   mi, mi^"7" si, mi mi, mi si, mi |
-  \partial 8*5 la,8 la^"m" mi, la <la, la > |
+  \partial 8*5 la,8[ la^"m" mi, la] <la, la > |
 }
 
 One =
